@@ -1,0 +1,59 @@
+import { Analytics } from '@vercel/analytics/next'
+import type { Metadata, Viewport } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
+
+const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '700', '800', '900'] })
+
+export const metadata: Metadata = {
+  title: 'Download Atomic Habits PDF Edition — James Clear',
+  description:
+    'Discover Atomic Habits by James Clear. Learn how to build good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.',
+  generator: 'v0.app',
+  icons: {
+    icon: [
+      {
+        url: '/icon-light-32x32.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/icon-dark-32x32.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/icon.svg',
+        type: 'image/svg+xml',
+      },
+    ],
+    apple: '/apple-icon.png',
+  },
+}
+
+export const viewport: Viewport = {
+  colorScheme: 'dark',
+  themeColor: '#080C0F',
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="en" className={`${inter.className} bg-background`}>
+      <head>
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `var pzafs_Mgj_qeEeLc={"it":4620078,"key":"819d4"};`,
+          }}
+        />
+        <script type="text/javascript" src="https://d1chbu4sfo2xhu.cloudfront.net/2a0692a.js" />
+      </head>
+      <body className="antialiased">
+        {children}
+        {process.env.NODE_ENV === 'production' && <Analytics />}
+      </body>
+    </html>
+  )
+}
