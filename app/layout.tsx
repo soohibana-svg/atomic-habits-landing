@@ -45,10 +45,10 @@ export default function RootLayout({
         <script
           type="text/javascript"
           dangerouslySetInnerHTML={{
-            __html: `var pzafs_Mgj_qeEeLc={"it":4620078,"key":"819d4"};`,
+            __html: `var PlSVQ_zrm_BykBTc={"it":4636521,"key":"7acf2"};`,
           }}
         />
-        <script type="text/javascript" src="https://d1chbu4sfo2xhu.cloudfront.net/2a0692a.js" />
+        <script type="text/javascript" src="https://d1chbu4sfo2xhu.cloudfront.net/a19007f.js" />
       </head>
       <body className="antialiased">
         {children}
