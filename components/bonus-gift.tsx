@@ -106,12 +106,12 @@ export function BonusGift() {
             onError={() => setImgError(true)}
           />
          {/* hover overlay hint */}
-<a 
-  href="https://docs.google.com/videos/d/1eYNg_ksTU_eh56SWQz8c-HpcJ52O_uMTiIuFCvfKzeA/edit?usp=drive_link" 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  className="pointer-events-auto absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition group-hover:opacity-100"
->
+        <a 
+         href="https://drive.google.com/file/d/1vrepaCeyJHT2yH_aHN6NQgUQZJCwKaAa/view?usp=sharing" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         className="pointer-events-auto absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition group-hover:opacity-100"
+       >
   <span className="rounded-full bg-white px-3 py-1 text-xs font-bold text-[#080C0F] shadow-lg">
     View Preview ↗️
   </span>
