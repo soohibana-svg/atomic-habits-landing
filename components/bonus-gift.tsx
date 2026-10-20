@@ -6,7 +6,7 @@ import { Gift, Check, Calendar, BarChart3, Table2 } from 'lucide-react'
 export function BonusGift() {
   const [imgError, setImgError] = useState(false)
   // ← CHANGE THIS LINK to your Google Sheets / preview URL
-  const previewUrl = "#"
+  const previewUrl = "https://drive.google.com/file/d/1vrepaCeyJHT2yH_aHN6NQgUQZJCwKaAa/view?usp=sharing"
   return (
     <section
       aria-labelledby="bonus-heading"
