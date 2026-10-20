@@ -105,17 +105,15 @@ export function BonusGift() {
             loading="lazy"
             onError={() => setImgError(true)}
           />
-         {/* hover overlay hint */}
-        <a 
-         href="https://drive.google.com/file/d/1vrepaCeyJHT2yH_aHN6NQgUQZJCwKaAa/view?usp=sharing" 
-         target="_blank" 
-         rel="noopener noreferrer" 
-         className="pointer-events-auto absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition group-hover:opacity-100"
-       >
-  <span className="rounded-full bg-white px-3 py-1 text-xs font-bold text-[#080C0F] shadow-lg">
-    View Preview ↗️
-  </span>
-</a>
+          {/* hover overlay hint */}
+          <span className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition group-hover:bg-black/35 group-hover:opacity-100">
+            <span className="rounded-full bg-white px-3 py-1 text-xs font-bold text-[#080C0F] shadow-lg">
+              View Preview ↗
+            </span>
+          </span>
+        </div>
+      )}
+      </a>
       <ul className="grid grid-cols-2 gap-2 rounded-xl border border-white/[0.05] bg-white/[0.03] p-2.5">
         {['Daily Tracking', 'Charts & Stats', 'Calendar & Goals', 'Sheets & Excel'].map((item) => (
           <li key={item} className="flex items-center gap-1.5">
